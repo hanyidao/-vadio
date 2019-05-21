@@ -1,0 +1,79 @@
+#res_gbp {
+	background: url("../images/registeredbgm.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+#reg_info {
+	width: 50%;
+	margin: auto;
+}
+
+#reg_logo {
+	width: 30%;
+	margin: auto;
+	padding-top: 8%;
+}
+
+#reg_reglogo1 {
+	width: 150px;
+	height: 100px;
+	border-radius: 0 100px 0 100px;
+	padding-top: 1px;
+	position: relative;
+	float: left;
+	margin: auto;
+}
+
+#reg_reglogo2 {
+	width: 150px;
+	height: 100px;
+	border-radius: 100px 0 100px 0;
+	padding-top: 1px;
+	position: relative;
+	float: left;
+}
+
+span {
+	font-size: 200%;
+	font-style: italic;
+}
+
+#ce {
+	position: relative;
+	float: right;
+}
+
+.layui-input-inline{
+	position: relative;
+	float: right;
+}
+
+.btm {
+	padding-top: 250px;
+	margin: auto;
+	width: 70%;
+}
+
+.layui-input {
+	width: 120%;
+}
+
+.layui-form {
+	width: 80%;
+	margin-left: 15%;
+}
+
+#TiShiPic {
+	font-size: 25px;
+	color: lawngreen;
+	position: relative;
+	float: left;
+	left: 30px;
+	display: none;
+}
+#TiShiPic p{
+	font-size: 18px;
+	position: relative;
+	float: right;
+	display: none;
+}

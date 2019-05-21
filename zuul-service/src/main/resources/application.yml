@@ -1,0 +1,21 @@
+server:
+  port: 10200
+  eurekapost: 10100
+spring:
+  application:
+    name: zuul-com.svs.bupei.vadio.mapper.service
+  host: 127.0.0.1
+eureka:
+  client:
+    service-url:
+     defaultZone: http://${spring.host}:${server.eurekapost}/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+zuul:
+  routes:
+    user-service: user/**
+    vadio-service: vadio/**
+    depot-service: depot/**
+    other-service: other/**
+  prefix: /api/

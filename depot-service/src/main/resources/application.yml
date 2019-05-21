@@ -1,0 +1,16 @@
+server:
+  port: 6000
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/svs?useSSL=false&serverTimezone=UTC
+    username: ggl
+    password: x5
+  application:
+    name: depot-service
+eureka:
+  client:
+    service-url: # EurekaServer地址
+      defaultZone: http://${eureka.instance.ip-address}:10100/eureka
+  instance:
+    prefer-ip-address: true # 当调用getHostname获取实例的,返回ip而不是host名称
+    ip-address: 127.0.0.1 # 指定自己的ip信息，不指定的话会自己寻找

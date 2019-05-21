@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="fonts/iconfont.css"  rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="layui/css/layui.css">
+<script src="layui/layui.js"></script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="js/common_js.js" type="text/javascript"></script>
+<script src="js/footer.js" type="text/javascript"></script>
+<title>个人信息</title>
+</head>
+
+<body>
+<!--顶部样式-->
+<div id="header_top">
+  <div id="top">
+    <div class="Inside_pages">
+      <div class="Collection">下午好，欢迎光临！<em></em><a href="#">收藏我们</a></div>
+	<div class="hd_top_manu clearfix">
+	  <ul class="clearfix">
+	   <li class="hd_menu_tit zhuce" data-addclass="hd_menu_hover">欢迎光临！<a id="u_name" href="#" class="red">[请登录]</a> 新用户<a href="#" class="red">[免费注册]</a></li>
+	   <li class="hd_menu_tit" data-addclass="hd_menu_hover"><a href="#">联系我们</a></li>
+	   <li class="hd_menu_tit list_name" data-addclass="hd_menu_hover"><a href="#" class="hd_menu">客户服务</a>
+	    <div class="hd_menu_list">
+		   <ul>
+		    <li><a href="#">常见问题</a></li>
+		   </ul>
+		</div>	   
+	   </li>
+       <li class="hd_menu_tit phone_c" data-addclass="hd_menu_hover"><a href="#" class="hd_menu "><em class="iconfont icon-shouji"></em>手机版</a>
+	    <div class="hd_menu_list erweima">
+		</div>	   
+	   </li>
+	  </ul>
+	</div>
+    </div>
+  </div>
+  <!--顶部样式1-->
+  <div id="header"  class="header page_style">
+  <div class="logo"><a href="index.html"></a></div>
+  <!--结束图层-->
+  <div class="Search">
+    <p><input name="" type="text"  class="text"/><input name="" type="submit" value="搜 索"  class="Search_btn"/></p>
+	<p class="Words"></p>
+</div>
+ <!--购物车样式-->
+ <div class="hd_Shopping_list" id="Shop ping_list">
+
+   <div class="dorpdown-layer">
+    <div class="spacer"></div>
+	 <!--<div class="prompt"></div><div class="nogoods"><b></b>购物车中还没有商品，赶紧选购吧！</div>-->
+	 <ul class="p_s_list">	   
+		<li>
+		    <div class="img"><img src="products/p_7.jpg" ></div>
+		    <div class="content"><p><a href="#">产品名称</a></p><p>颜色分类:紫花8255尺码:XL</p></div>
+			<div class="Operations">
+			<p class="Price">￥55.00</p>
+			<p><a href="#">删除</a></p></div>
+		  </li>
+		</ul>		
+	 <div class="Shopping_style">
+	 <div class="p-total">共<b>1</b>件商品　共计<strong>￥ 515.00</strong></div>
+	  <a href="#" title="去购物车结算" id="btn-payforgoods" class="Shopping">去购物车结算</a>
+	 </div>	 
+   </div>
+ </div>
+</div>
+
+</div>
+<!--用户中心样式-->
+ <div class="user_style clearfix">
+  <div class="user_center">
+ <!--左侧菜单栏-->
+  <div class="left_style">
+    <div class="menu_style">
+     <div class="user_title">用户中心</div>
+     <div class="user_Head">
+     <div class="user_portrait">
+      
+      <img id="user_img" src="">
+      <div class="background_img"></div>
+      </div>
+      <div class="user_name">
+       <p><span class="name" ></span><a href="User_changePassword.html">[修改密码]</a></p>
+       <p id ="u_time"></p>
+       </div>           
+     </div>
+     <div class="sideMen">
+     <!--菜单列表图层-->
+
+     <dl class="accountSideOption1">
+      <dt class="transaction_manage"><em class="icon_2"></em>会员中心</dt>
+        <dd>
+      <ul>
+        <li> <a href="User_Personalinfo.html"> 用户信息</a></li>
+        <li> <a href="User_Collect.html"> 我的收藏</a></li>
+        <li><a href="user.php?act=comment_list"> 我的评论</a></li>
+      </ul>
+    </dd>
+    </dl>
+
+
+    </div>
+      <script>jQuery(".sideMen").slide({titCell:"dt", targetCell:"dd",trigger:"click",defaultIndex:0,effect:"slideDown",delayTime:300,returnDefault:true});</script>
+   </div>  
+  </div>
+ 
+     <!--样式-->
+     <div class="user_info_p_s  clearfix">
+       <!--订单记录-->
+       <div class="left_user_cont">
+     <div class="us_Orders left clearfix">
+
+  
+
+
+
+   
+  </div>
+    </div>
+  <!--右侧样式-->
+   <div class="right_style">
+    <div class="info_content">
+     <!--个人信息-->
+      <div class="Personal_info" id="Personal">
+         <div class="title_Section"><span>个人信息</span></div>
+         <ul class="xinxi">
+
+          <li><label>用户性别：</label> <span id="" class="sex">男</span>
+          <div class="add_sex">
+          <input type="radio" name="sex" value="0" checked="checked">
+                    保密&nbsp;&nbsp;
+                    <input type="radio" name="sex" value="1">
+                    男&nbsp;&nbsp;
+                    <input type="radio" name="sex" value="2">
+                  女&nbsp;&nbsp;</div></li>
+          <li><label >用户名：</label>  <span><input id="username" name="" type="text" value=""  class="text"  disabled="disabled"/></span></li>
+          <li><label>昵称：</label>  <span><input id="uname" name="" type="text" value=""  class="text"  disabled="disabled"/></span></li>        
+          <li><label>移动电话：</label>  <span><input id ="ucall" name="" type="text" value=""  class="text"  disabled="disabled"/></span></li>
+          
+          <div class="bottom"><input name="" type="submit" value="修改信息"  class="modify"/><input id="tijiao" name="" type="submit" value="确认修改"  class="confirm"/></div>
+         </ul>
+         <ul class="Head_portrait">
+          <li class="User_avatar"> 
+              <!--预览图片-->
+            <img style="position: relative;width: 100%;height: 100%" class="layui-upload-img" id="demo1"></li>
+          <li>
+              <div class="layui-upload">
+                  <button type="button" class="layui-btn" id="choose">选择文件</button>
+                  <div class="layui-upload-list">
+                   
+                   
+                    <!--提示上传信息-->
+                    <p id="demoText"></p>
+                  </div>
+                  <button type="button" class="layui-btn" id="load">上传</button>
+                </div>   
+           </li>
+         </ul>
+      </div>
+    </div>
+    </div>
+   </div>
+</div>
+
+<script>
+/*
+    显示当前日期
+*/
+var mydate = new Date();
+      mydate.toLocaleDateString(); //获取当前日期
+      $("#u_time").text("访问日期："+mydate.toLocaleDateString());
+   var data=document.cookie;//获取缓存
+   data1 = eval('(' + data + ')')//重转json 
+  console.log(data1.data[0].uid);
+  $(".name").text(data1.data[0].uname);
+  if(data1.data[0].uname==null){
+    $("#u_name").text("[请登录]");
+ }else{
+  $("#u_name").text(data1.data[0].uname);
+ }
+  $("#username").val(data1.data[0].username);
+  $("#uname").val(data1.data[0].uname);
+  $("#ucall").val(data1.data[0].ucall);
+  $("#tijiao").click(function(){
+    var str = {
+               uname: $("#uname").val(),
+               username: $("#username").val(),
+               ucall: $("ucall").val(),
+               uid: data1.data[0].uid
+               }
+    $.ajax({
+					type: "POST",
+          url: "http://api.pei.com/api/user/user/updateuser",
+					data: JSON.stringify(str),
+          contentType: 'application/json;',
+					success: function(data) { //请求成功时的处理
+					//var jsonobj = eval("(" + data + ")")
+
+						console.log(data);
+            alert(data+"即将返回登录页面！！！");
+            location.href = "Login.html";
+
+					},
+
+				});
+  });
+
+/*
+  用户名图片
+*/
+var u_uid={uid:data1.data[0].uid};
+console.log(u_uid);
+$(document).ready(function(){
+      $.ajax({
+					type: "POST",
+          url: "http://api.pei.com/api/user/user/selectLogo",
+          contentType: 'application/json;',
+					dataType:"json",
+					data: JSON.stringify(u_uid),
+          success: function(data) { //请求成功时的处理
+            
+						$("#user_img").attr("src",data.data[0].ulogo);
+						
+           
+
+					
+
+					},
+
+				});
+    })
+   
+/*
+    头像更改
+*/ 
+  layui.use(['upload','jquery'], function(){
+                var $ = layui.$,
+                upload = layui.upload;
+                
+                 //普通图片上传
+                  var uploadInst = upload.render({
+                    elem: '#choose'//选择文件的DOM对象
+                    ,auto: false //选择文件后不自动上传
+                    ,bindAction: '#load' //指向一个按钮触发上传
+                    ,url: 'http://api.pei.com/api/user/user/uploadLogo'
+                    ,accept: 'images'
+                    ,data: {uid:data1.data[0].uid}
+                    ,choose:function(obj){//选择文件的回调，obj为选中的文件
+                      //将每次选择的文件追加到文件队列
+                      var files = obj.pushFile();
+                      //预览选中的文件（本地文件）
+                      obj.preview(function(index,file,result){
+                         $('#demo1').attr('src', result); 
+                      });
+                    }
+                    ,before: function(obj){//文件上传前的回调
+                      
+                    }
+                    ,done: function(res){
+                      //返回结果上传成功or失败
+                      alert(res.msg);
+                      window.location.reload()
+
+                     
+                     
+                    }
+                    ,error: function(){
+                      //演示失败状态，并实现重传
+                      var demoText = $('#demoText');
+                      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+                      demoText.find('.demo-reload').on('click', function(){
+                        uploadInst.upload();
+                      });
+                    }
+                  });
+              });
+            </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE >
+<html>
+	<link rel="stylesheet" href="layui/css/layui.css" />
+	<link rel="stylesheet" href="css/registered.css" />
+	<head>
+		<title>用户注册</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="res_gbp">
+
+
+			<!-- logo样式 -->
+			<div id="reg_logo">
+				<img src="" alt="logo加载失败" />
+			</div>
+
+
+
+			<!-- 信息处理 -->
+			<div id="reg_info">
+				<form class="layui-form">
+
+					<!-- 注册图标 -->
+					<div class="layui-bg-red" id="reg_reglogo1">
+						<span id="zhu">&nbsp;注</span>
+					</div>
+					<div class="layui-bg-red" id="reg_reglogo2">
+						<span id="ce">册&nbsp;</span>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label layui-btn layui-btn-warm">用户名</label>
+
+						<div class="layui-input-inline">
+							<input type="text" name="username" onblur="query_user();" required lay-verify="required" placeholder="例如: ******@***.com"
+							 autocomplete="off" class="layui-input">
+						</div>
+						<i id="TiShiPic" class="layui-icon layui-icon-ok">
+							<p></p>
+						</i>
+
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label layui-btn layui-btn-warm">昵&nbsp;&nbsp;&nbsp;&nbsp;称</label>
+						<div class="layui-input-inline">
+							<input type="text" name="uname" required lay-verify="required" placeholder="请输入昵称" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label layui-btn layui-btn-warm">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+						<div class="layui-input-inline">
+							<input type="password" name="pwd" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label layui-btn layui-btn-warm">性&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+						<div class="layui-input-block">
+							<input type="radio" name="sex" value="男" title="男" checked>
+							<input type="radio" name="sex" value="女" title="女">
+						</div>
+					</div>
+
+
+					<div class="layui-form-item">
+						<label class="layui-form-label layui-btn layui-btn-warm">手机号</label>
+						<div class="layui-input-inline">
+							<input type="phone" name="ucall" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<div class="layui-input-block">
+							<button class="layui-btn layui-btn-radius layui-btn-disabled" lay-submit lay-filter="formDemo" id="reg_submit">注册</button>
+							<button type="reset" class="layui-btn layui-btn-radius layui-bg-gray">重置</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			<!-- 版权声明 -->
+			<div class="btmbg">
+				
+				<div class="btm">
+					备案/许可证编号： Copyright © 2019.04-2 不赔网 All Rights Reserved. 复制必究 , Technical
+					Support: Dgg Group <br>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="js/registered.js">
+		<!-- 查询用户是否存在    查一 -->
+	</script>
+	<script src="js/registered_info.js">
+		// 提交注册信息
+	</script>
+	<script>
+		if ($("#TiShiPic p").css('color').toString() == "rgb(124, 252, 0)") {
+			console.log($("#TiShiPic p").css('color'));
+		}
+	</script>
+</html>

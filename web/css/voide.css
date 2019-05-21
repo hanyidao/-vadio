@@ -1,0 +1,197 @@
+.fixed {
+		display: none;
+		background-color: #1D69A9;
+		width: 100%;
+		height: 15px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		bottom: 0;
+		z-index: 9999;
+	}
+
+	video {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+		margin: 0;
+	}
+
+	.controls {
+		width: 100%;
+		height: 19%;
+		position: relative;
+		/* bottom: 10px; */
+		left: 0%;
+		bottom: 20%;
+		/* margin-bottom: -41px; */
+		display: none;
+
+
+	}
+
+	.zshi {
+		top: 21%;
+		height: 80%;
+		width: 100%;
+		position: absolute;
+		background: black;
+		opacity: 0.3;
+	}
+
+	.switch {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	.bf {
+		position: relative;
+		width: 22px;
+		height: 22px;
+		left: 4%;
+		top: 63%;
+		border-radius: 30px;
+	}
+
+	.play-button {
+		position: absolute;
+		font-size: 22px;
+		left: -1%;
+		top: -3%;
+		border-radius: 50%;
+		color: #fff;
+
+	}
+
+	.play-button:hover {
+		cursor: pointer;
+		/* 发光字体 */
+		text-shadow: 0 0 5px #99ffff,
+			0 0 15px #99ffff,
+			0 0 25px #99ffff;
+	}
+
+	.pause-button {
+		position: absolute;
+		font-size: 22px;
+		left: -1%;
+		top: -3%;
+		border-radius: 50%;
+		color: #fff;
+	}
+
+	.pause-button:hover {
+		cursor: pointer;
+		/* 发光字体 */
+		text-shadow: 0 0 5px #99ffff,
+			0 0 15px #99ffff,
+			0 0 25px #99ffff;
+	}
+
+	.play-button-big {
+		z-index: 0;
+		position: relative;
+		font-size: 70px;
+		left: 1448%;
+		top: -1140%;
+		border-radius: 50%;
+		color: #fff;
+
+	}
+
+	.play-button-big:hover {
+		cursor: pointer;
+		/* 发光字体 */
+		text-shadow: 0 0 5px #99ffff,
+			0 0 15px #99ffff,
+			0 0 25px #99ffff;
+	}
+
+	.progress {
+		width: 100%;
+		height: 3.5%;
+		position: relative;
+		background-color: #404040;
+		left: 0;
+		top: -50%;
+		/* border-radius: 4px; */
+		overflow: hidden;
+	}
+
+	.curr-progress {
+		width: 0%;
+		height: 100%;
+		background-color: #FF9900;
+		transition: all 0.2s;
+		/* color: #fff; */
+		/* 发光字体 */
+		box-shadow: 0 0 10px #99ffff,
+			0 0 30px #99ffff,
+			0 0 60px #99ffff;
+	}
+
+	/* 时间组件 */
+	.time {
+		width: 14%;
+		height: 20%;
+		text-align: center;
+		font-size: 12px;
+		color: #fff;
+		position: relative;
+		left: 70%;
+		top: -37%;
+	}
+
+	/* 按钮系列 */
+	.extend {
+		position: relative;
+		width: 18px;
+		height: 16px;
+		left: 90%;
+		top: -55px;
+		color: #ffffff;
+	}
+
+	.extend:hover {
+		cursor: pointer;
+		/* 发光字体 */
+		text-shadow: 0 0 5px #ffffff,
+			0 0 15px #99ffff,
+			0 0 25px #99ffff;
+	}
+
+	#ranDiv {
+		height: 28px;
+		width: 28px;
+		/* background-color: #3333FF; */
+		position: relative;
+		left: 88%;
+		top: -54px;
+		color: #ffffff;
+		/* 发光字体 */
+		text-shadow: 0 0 5px #ffffff,
+			0 0 15px #99ffff,
+			0 0 25px #99ffff;
+	}
+
+	#ranDiv:hover {
+		cursor: pointer;
+	}
+
+	#ran {
+		position: absolute;
+		right: 2%;
+		top: -37%;
+		display: none;
+		height: 29%;
+		width: 13%;
+	}
+
+	.boxx {
+		/* margin: 20px; */
+		background-image: -webkit-linear-gradient(180deg, white 0%, #ffe0e0 150%);
+		position: relative;
+		padding: 10px;
+	}

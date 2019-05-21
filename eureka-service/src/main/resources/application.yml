@@ -1,0 +1,12 @@
+server:
+  port: 10100
+spring:
+  application:
+    name: eureka-service
+  host: localhost
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${spring.host}:${server.port}/eureka
+    register-with-eureka: false #不注册自己，列表当中看不到自己
+    fetch-registry: false #不注册自己
